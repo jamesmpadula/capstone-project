@@ -21,3 +21,34 @@
 		height: 100%;
 	}
 </style>
+
+<style is:global>
+  /* This only kicks in on screens smaller than a tablet */
+  @media (max-width: 992px) {
+    /* 1. RESET ALL MARGINS */
+    section, 
+    footer, 
+    #m7, 
+    div[style*="margin-left"], 
+    header {
+      margin-left: 0 !important;
+      width: 100% !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      box-sizing: border-box !important;
+    }
+
+    /* 2. HIDE THE SIDEBAR */
+    /* If your sidebar has a class like .sidebar or id #sidebar, hide it so it doesn't overlap */
+    aside, #sidebar, .sidebar {
+      display: none !important;
+    }
+
+    /* 3. FIX OVERFLOW (No more horizontal scrolling) */
+    html, body {
+      overflow-x: hidden !important;
+      width: 100% !important;
+      position: relative;
+    }
+  }
+</style>
