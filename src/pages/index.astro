@@ -1,11 +1,451 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<Layout title="Hardwired Consulting | Professional IS Portfolio">
+  <div class="app-container">
+<nav class="sidebar" style="width: 280px; position: fixed; height: 100vh; background: #111; border-right: 1px solid #333; display: flex; flex-direction: column; padding: 30px 20px; box-sizing: border-box; z-index: 1000;">
+  
+  <div class="logo" style="margin-bottom: 50px; text-align: left;">
+    <img src="/assets/transparent-logo.png" alt="Hardwired Consulting" style="width: 140px; height: auto; margin-bottom: 25px; display: block; filter: drop-shadow(0 0 10px rgba(255, 102, 0, 0.2));">
+    <h2 class="brand-h" style="color: #ff6600; margin: 0; font-size: 2.1rem; font-weight: 900; letter-spacing: 1px; line-height: 0.9;">HARDWIRED</h2>
+    <span class="brand-c" style="color: #0099ff; font-size: 1rem; font-weight: bold; letter-spacing: 4px; text-transform: uppercase; display: block; margin-top: 8px;">CONSULTING</span>
+  </div>
+
+  <ul class="nav-links" style="list-style: none; padding: 0; margin: 0; flex-grow: 1;">
+    <li style="margin-bottom: 18px;"><a href="#hero" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">Agency Profile</a></li>
+    <li style="margin-bottom: 18px;"><a href="#m1" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">01 Project Planning</a></li>
+    <li style="margin-bottom: 18px;"><a href="#m2" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">02 Hardware Specs</a></li>
+    <li style="margin-bottom: 18px;"><a href="#m3" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">03 Software Stack</a></li>
+    <li style="margin-bottom: 18px;"><a href="#m4" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">04 Network Design</a></li>
+    <li style="margin-bottom: 18px;"><a href="#m5" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">05 Business Dashboard</a></li>
+    <li style="margin-bottom: 18px;"><a href="#m6" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">06 Tech Training</a></li>
+    <li style="margin-bottom: 18px;"><a href="#m7" style="color: #999; text-decoration: none; font-size: 1rem; font-weight: 600;">07 Web Systems</a></li>
+  </ul>
+
+  <div class="sidebar-footer" style="padding-top: 25px; border-top: 1px solid #222;">
+    <p style="color: #444; font-size: 0.8rem; margin: 0;">© 2026 Hardwired Consulting</p>
+  </div>
+</nav>
+    <main class="content-area">
+      <section id="hero" class="milestone-section">
+        <div class="glass-card">
+          <span class="client-tag"></span>
+          <h1>Rideline Power Bikes</h1>
+          <p class="subtitle">Full-Scale Infrastructure Modernization</p>
+          <p class="summary">
+            Hardwired Consulting was brought in to build a solid technical foundation for Rideline Power Bikes. Our goal was to move them away from disorganized systems and set up a professional, "hardwired" business infrastructure.
+          </p>
+        </div>
+      </section>
+      <!-- /*M1*/ -->
+   <section id="m1" style="width: 100%; padding: 40px 0; border-bottom: 1px solid #333;">
+  
+  <div style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 12px; border: 1px solid #222; max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+      <div>
+        <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px;">Phase 01</span>
+        <h2 style="margin: 5px 0 0 0; color: #fff; font-size: 2.2rem; font-weight: 800;">Project Planning</h2>
+      </div>
+      <div style="display: flex; gap: 12px;">
+        <a href="/docs/Business_Letter.pdf" target="_blank" style="background: #007bff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Business Letter</a>
+        <a href="/docs/Padula_M1_Proposal.pdf" target="_blank" style="border: 1px solid #007bff; color: #007bff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">View Proposal</a>
+      </div>
+    </div>
+
+    <div style="width: 100%; background: #fff; border: 1px solid #444; border-radius: 8px; margin-bottom: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow: hidden;">
+      <img src="/assets/m1-gantt.png" alt="Strategic Roadmap" style="width: 100%; height: auto; display: block; image-rendering: -webkit-optimize-contrast;" />
+    </div>
+
+    <div style="text-align: left; border-top: 1px solid #333; padding-top: 25px;">
+      <p style="color: #ccc; font-size: 1rem; line-height: 1.8; margin: 0;">
+       Developed a 16-week project roadmap for <strong>Rideline Power Bikes</strong> to keep the project on track. 
+        This plan ensured that hardware orders, software setups, and the final web build all happened in the 
+        right order to meet the graduation deadline.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- M2 -->
+<section id="m2" style="width: 100%; padding: 40px 0; border-bottom: 1px solid #333;">
+  <div style="background: rgba(255,255,255,0.03); padding: 25px; border-radius: 12px; border: 1px solid #222; max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+    
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 25px; width: 100%;">
+      <div style="text-align: left;">
+        <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; font-size: 0.75rem;">Phase 02</span>
+        <h2 style="margin: 5px 0 0 0; color: #fff; font-size: 1.8rem;">Hardware Specs</h2>
+      </div>
+      <a href="/docs/Padula_M2-HardwareProp.pdf" target="_blank" style="background: #007bff; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.8rem;">View Proposal</a>
+    </div>
+
+    <div style="width: 100%; height: 500px; overflow-y: scroll; background: #111; border: 1px solid #444; border-radius: 8px; position: relative;">
+      <div style="padding: 40px 20px; display: flex; flex-direction: column; align-items: center;">
+        <p style="width: 90%; color: #555; font-family: monospace; font-size: 0.6rem; margin-bottom: 15px; text-align: left;">[ASSET: HARDWARE_MANIFEST_HRES]</p>
+        <img src="/assets/m2-invoice-crop.png" alt="Hardware Invoice" style="width: 95%; height: auto; border: 1px solid #333; image-rendering: crisp-edges; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <div style="padding: 40px; color: #444; font-family: monospace; font-size: 0.7rem;"></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px; border-top: 1px solid #333; padding-top: 15px; text-align: left;">
+<ul style="color: #ccc; font-size: 0.9rem; line-height: 1.7; padding-left: 20px; margin: 0;">
+<li><strong>Vendor Selection:</strong> Managed a <strong>$81,735.61</strong> hardware budget, picking Dell and Square systems for their reliability and long-term support.</li>
+<li><strong>Asset Standardization:</strong> Used identical hardware across the facility to make maintenance easier and ensure any employee can use any station.</li>
+<li><strong>Durability Testing:</strong> Chose ruggedized terminal nodes for the warehouse areas to handle the dust and high-intensity use of a bike manufacturing floor.</li>
+</ul>
+    </div>
+
+  </div> </section> ```
+
+<!-- M3 -->
+<section id="m3" style="width: 100%; padding: 40px 0; border-bottom: 1px solid #333;">
+  
+  <div style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 12px; border: 1px solid #222; max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+      <div style="text-align: left;">
+        <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Phase 03</span>
+        <h2 style="margin: 5px 0 0 0; color: #fff; font-size: 2.2rem;">Software Stack</h2>
+      </div>
+      <a href="/docs/Padula_M3-SoftwareProp.pdf" target="_blank" style="background: #007bff; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">View Proposal</a>
+    </div>
+
+    <div style="width: 100%; height: 500px; overflow-y: scroll; background: #fff; border: 1px solid #444; border-radius: 8px; margin-bottom: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+      <img src="/assets/m3-software-invoice.png" style="width: 100%; height: auto; display: block; padding: 20px;">
+    </div>
+
+    <div style="text-align: left; border-top: 1px solid #333; padding-top: 25px;">
+      <ul style="color: #ccc; font-size: 1rem; line-height: 1.8; padding-left: 20px; margin: 0;">
+      <li><strong>Cloud Migration:</strong> Moved old, disconnected data into a unified <strong>Cloud POS and Accounting</strong> system for better transparency.</li>
+<li><strong>Subscription Modeling:</strong> Switched variable software costs to predictable monthly subscriptions, making the project budget much easier to manage.</li>
+<li><strong>Inventory Sync:</strong> Linked the front-end retail site to the back-end warehouse stock so inventory updates automatically with every sale.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<!-- M4 -->
+ <section id="m4" style="width: 100%; padding: 40px 0; border-bottom: 1px solid #333;">
+  <div style="background: rgba(255,255,255,0.03); padding: 25px; border-radius: 12px; border: 1px solid #222; max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+    
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 25px; width: 100%;">
+      <div style="text-align: left;">
+        <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; font-size: 0.75rem;">Phase 04</span>
+        <h2 style="margin: 5px 0 0 0; color: #fff; font-size: 1.8rem;">Network Infrastructure</h2>
+      </div>
+      <a href="/docs/Padula_M4_NetworkProp.pdf" target="_blank" style="background: #007bff; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.8rem;">View Proposal</a>
+    </div>
+
+    <div style="width: 100%; background: #fff; border: 1px solid #444; border-radius: 8px; padding: 20px; box-sizing: border-box; display: flex; justify-content: center;">
+      <img src="/assets/m4-network-map.png" 
+           alt="Network Topology Diagram" 
+           style="width: 100%; max-height: 550px; height: auto; object-fit: contain; 
+                  image-rendering: -webkit-optimize-contrast; 
+                  image-rendering: crisp-edges; 
+                  display: block;">
+    </div>
+
+    <div style="margin-top: 25px; border-top: 1px solid #333; padding-top: 20px; text-align: left;">
+      <ul style="color: #ccc; font-size: 0.9rem; line-height: 1.7; padding-left: 20px; margin: 0;">
+<li><strong>Traffic Management:</strong> Set up <strong>VLANs</strong> to separate warehouse, office, and guest traffic, ensuring the network stays secure and lag-free for critical tasks.</li>
+<li><strong>Industrial Coverage:</strong> Installed high-density access points so mobile inventory scanners stay connected in every corner of the facility, even in high-interference zones.</li>
+<li><strong>Systems Stability:</strong> Built in hardware redundancies to ensure 99.9% uptime, protecting the business from costly downtime during peak manufacturing hours.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<!-- M5 -->
+<section id="m5" style="width: 100%; padding: 40px 0; border-bottom: 1px solid #333;">
+  <div style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 12px; border: 1px solid #222; max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+      <div>
+        <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Phase 05</span>
+        <h2 style="margin: 5px 0 0 0; color: #fff; font-size: 2.2rem;">Buisness Dashboard</h2>
+      </div>
+      <a href="/docs/padula_M5-datamanagement .xlsx" target="_blank" style="background: #007bff; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Download Workbook</a>
+    </div>
+
+    <div style="width: 100%; height: 500px; overflow-y: scroll; background: #fff; border: 1px solid #444; border-radius: 10px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); scrollbar-width: thin;">
+      <img src="/assets/dashboard-hero.png" alt="Dynamic Excel Dashboard" style="width: 100%; height: auto; display: block; image-rendering: -webkit-optimize-contrast;" />
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; border-top: 1px solid #333; padding-top: 30px;">
+      <div>
+        <ul style="color: #ccc; font-size: 0.95rem; line-height: 1.8; padding-left: 20px;">
+<li><strong>Data Automation:</strong> Built a custom system that pulls raw sales data into clean visuals, removing the need for manual updates and keeping the numbers accurate.</li>
+<li><strong>Inventory Management:</strong> Set up "Quantity on Hand" tracking so the team can see exactly what’s in stock and which categories are driving the most value.</li>
+<li><strong>Sales Tracking:</strong> Integrated performance charts to monitor revenue by employee and region, making it easy to see where the business is growing.</li>
+        </ul>
+      </div>
+
+  </div>
+</section>
+<!-- M6 -->
+<section id="m6" style="width: 100%; padding: 40px 0; border-bottom: 1px solid #333;">
+  <div style="background: rgba(255,255,255,0.03); padding: 35px; border-radius: 12px; border: 1px solid #222; max-width: 1100px; margin: 0 auto; box-sizing: border-box; text-align: center;">
+    
+    <div style="margin-bottom: 30px;">
+      <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Phase 06</span>
+      <h2 style="margin: 10px 0 20px 0; color: #fff; font-size: 2.2rem;">AI Training</h2>
+      <a href="/docs/Padula_M6-Training.pdf" target="_blank" style="display: inline-block; background: #007bff; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: background 0.3s;">View Training Package</a>
+    </div>
+
+    <div style="width: 100%; height: 500px; overflow-y: scroll; background: #fff; border: 1px solid #444; border-radius: 8px; margin: 0 auto 30px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); scrollbar-width: thin;">
+      <img src="/assets/m6-training-screenshot.png" alt="AI Policy Document" style="width: 100%; height: auto; display: block; image-rendering: -webkit-optimize-contrast;">
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; border-top: 1px solid #333; padding-top: 30px; text-align: left;">
+      <div>
+        <ul style="color: #ccc; font-size: 0.9rem; line-height: 1.7; padding-left: 20px;">
+          <li><strong>AI Usage Policy:</strong> Drafted a clear <strong>Acceptable Use Policy</strong> to ensure staff use AI tools safely while protecting sensitive company data.</li>
+<li><strong>Systems Documentation:</strong> Authored step-by-step user manuals and technical guides to help the <strong>Rideline</strong> team manage the new infrastructure independently.</li>
+<li><strong>Workflow Training:</strong> Conducted hands-on walkthroughs to bridge the gap between the new software tools and daily warehouse operations.</li>
+<li><strong>Cybersecurity Awareness:</strong> Implemented basic security protocols to reduce human error and ensure long term data integrity across the cloud ecosystem.</li>
+        </ul>
+      </div>
+  
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <div style="display: flex; justify-content: flex-end; gap: 10px; flex-wrap: wrap;">
+    </div>
+
+  </div>
+</section>
+<!--  M7  -->
+<section id="m7" style="width: calc(100% - 260px); margin-left: 260px; padding: 40px 0; border-bottom: 1px solid #333; background: #000; box-sizing: border-box;">
+    
+    <div style="background: rgba(255, 255, 255, 0.03); padding: 35px; border-radius: 12px; border: 1px solid #222; max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 25px;">
+            <div style="text-align: left;">
+                <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px;">Phase 07</span>
+                <h2 style="margin: 5px 0 0 0; color: #fff; font-size: 2.2rem; font-weight: 800;">Web Systems</h2>
+            </div>
+            <a href="/assets/tech-tree.png" target="_blank" style="background: #007bff; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.8rem;">Tech Stack Map</a>
+        </div>
+
+        <div style="width: 100%; height: 500px; overflow-y: scroll; background: #111; border: 1px solid #444; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); scrollbar-width: thin;">
+            <img src="/assets/m7-local-screenshot.png" alt="Web Systems Preview" style="width: 100%; height: auto; display: block;">
+        </div>
+
+        <div style="margin-top: 20px; border-top: 1px solid #333; padding-top: 25px; text-align: left;">
+            <ul style="color: #ccc; font-size: 0.95rem; line-height: 1.8; padding-left: 20px; margin: 0;">
+                <li style="margin-bottom: 12px;"><strong>Custom Web Construction:</strong> Built the storefront from the ground up using <strong>HTML</strong> and <strong>CSS</strong> to create a functional interface for the Rideline brand.</li>
+                <li style="margin-bottom: 12px;"><strong>Java Logic Implementation:</strong> Developed and integrated a custom <strong>Java-based mapping tool</strong> to handle coordinate-driven data and facility visualization.</li>
+                <li style="margin-bottom: 12px;"><strong>Operational Scope:</strong> Organized the codebase to allow for future backend expansion, demonstrating a solid foundation for full-scale scale scalability.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<footer style="width: calc(100% - 260px); margin-left: 260px; padding: 80px 0; background: #000; border-top: 1px solid #222; display: flex; justify-content: center; align-items: center; box-sizing: border-box;">
+    
+    <div style="max-width: 1100px; width: 100%; text-align: center; padding: 0 20px;">
+        
+        <h3 style="color: #fff; font-size: 1.8rem; margin: 0 0 10px 0; font-weight: 800; letter-spacing: 2px;">James Padula</h3>
+        
+        <p style="color: #666; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 25px 0; font-weight: 600;">
+            Information Systems Capstone
+        </p>
+        
+        <div style="height: 2px; width: 60px; background: #f39c12; margin: 0 auto 25px auto;"></div>
+        
+        <p style="color: #444; font-size: 0.8rem; margin: 0; font-weight: bold; letter-spacing: 1px;">
+            © 2026 HARDWIRED CONSULTING | ASHEVILLE, NC
+        </p>
+        
+    </div>
+</footer>
+<style>
+  :global(html) { 
+    scroll-behavior: smooth; 
+    font-family: 'Inter', sans-serif; 
+    background: #0c0c0c; 
+    color: #fff; 
+    margin: 0; 
+  }
+
+  .app-container { 
+    display: flex; 
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 280px;
+    height: 100vh;
+    background: #151515;
+    position: fixed; /* Stays locked on the left */
+    border-right: 4px solid #ff7b00; 
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 100; /* Stays on top */
+  }
+
+  .content-area { 
+    margin-left: 280px; /* The width of your sidebar */
+    width: calc(100% - 280px); 
+    display: flex;
+    flex-direction: column;
+    /* This is the magic change: align to the start (left) */
+    align-items: flex-start; 
+    /* This creates the consistent gap from the orange bar */
+    padding-left: 100px; 
+    padding-right: 5vw;
+    padding-top: 0;
+  }
+
+  .milestone-section { 
+    min-height: 100vh; 
+    width: 100%;
+    max-width: 800px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .content-box {
+    width: 100%;
+    text-align: left; 
+  }
+
+  /* Adjusting for 4K */
+  h1 { 
+    font-size: clamp(3.5rem, 6vw, 5.5rem); 
+    margin: 0; 
+    line-height: 0.85; 
+    color: #fff;
+    text-align: left;
+  }
+
+  /* BRANDING & TEXT */
+  .brand-h { color: #ff7b00; margin: 0; font-size: 1.8rem; font-weight: 900; letter-spacing: -1px; }
+  .brand-c { color: #00a2ff; font-size: 0.9rem; font-weight: 700; letter-spacing: 2px; }
+  .step { color: #ff7b00; font-weight: 800; font-size: 1.1rem; text-transform: uppercase; }
+  h1 { font-size: clamp(3rem, 8vw, 5rem); margin: 0; line-height: 0.9; }
+  h2 { font-size: clamp(2rem, 5vw, 3.5rem); color: #00a2ff; margin: 0.5rem 0; }
+  .subtitle { font-size: 1.8rem; color: #ff7b00; margin-top: 1rem; }
+  .summary { color: #aaa; line-height: 1.7; font-size: 1.2rem; margin-top: 2rem; }
+
+  /* BUTTONS & BADGES */
+  .btn { display: inline-block; margin-top: 2rem; padding: 0.9rem 1.8rem; background: #00a2ff; color: white; text-decoration: none; border-radius: 4px; font-weight: 700; transition: 0.2s; width: fit-content; }
+  .btn.secondary { background: transparent; border: 2px solid #ff7b00; color: #ff7b00; margin-right: 1rem; }
+  .status-badge { margin-top: 2rem; background: #ff7b00; color: #fff; padding: 0.5rem 1rem; border-radius: 4px; font-weight: bold; width: fit-content; }
+specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+  .specs-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .specs-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ff7b00; 
+    font-weight: bold;
+  }
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .dashboard-preview img {
+  width: 100%;
+  height: 450px; /* Forces height */
+  overflow: hidden; /* Hides what doesn't fit */
+  border-radius: 12px;
+  border: 1px solid #333;
+  margin: 20px 0;
+  background: #fff; /* Ensures the dashboard background stays clean */
+}
+.dashboard-window {
+  width: 100%;
+  max-width: 900px; /* Limits the width  */
+  margin: 25px auto;
+  background: #fff; /* White background */
+  border-radius: 12px;
+  border: 1px solid #444;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.dashboard-window img {
+  width: 100%;
+  height: 350px; /* Forced height to keep text on screen */
+  object-fit: contain; /* Shows as much as possible without stretching */
+  padding: 15px;
+  display: block;
+}
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* The Professional Button */
+.btn-download {
+  background: #007bff;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.btn-download:hover {
+  background: #0056b3;
+}
+
+/* The Tech Pills */
+.pill-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.tech-tag {
+  background: rgba(0, 255, 204, 0.1);
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.invoice-window {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #fff;
+  display: block; 
+}
+
+.invoice-window img {
+  width: 100%;
+  height: auto; /* Maintains original aspect ratio */
+  display: block;
+  margin: 0; /* Removes any default centering */
+}
+</style>
