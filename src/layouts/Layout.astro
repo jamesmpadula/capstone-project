@@ -18,24 +18,20 @@
 	body {
 		margin: 0;
 		width: 100%;
-		/* Use min-height so the page can actually grow with your content */
-		min-height: 100%; 
-		/* This prevents horizontal scrolling bugs on mobile */
-		overflow-x: hidden; 
+		min-height: 100%;
 	}
 
-	/* This only applies to screens smaller than a tablet */
+	/* THE EMERGENCY MOBILE FIX */
 	@media (max-width: 768px) {
-		main, section, div {
-			/* Forces things to stay within the screen width */
-			max-width: 100%;
-			box-sizing: border-box;
+		#m7, main {
+			margin: 0 !important;
+			position: relative !important;
+			left: 0 !important;
+			padding: 15px !important;
 		}
-
-		/* If your sidebar or navigation is floating/absolute, 
-		   this ensures it doesn't cover your main content */
-		aside {
-			display: none;
+		
+		aside, #sidebar, .sidebar {
+			display: none !important;
 		}
 	}
 </style>
