@@ -13,42 +13,29 @@
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html,
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		/* Use min-height so the page can actually grow with your content */
+		min-height: 100%; 
+		/* This prevents horizontal scrolling bugs on mobile */
+		overflow-x: hidden; 
 	}
-</style>
 
-<style is:global>
-  /* This only kicks in on screens smaller than a tablet */
-  @media (max-width: 992px) {
-    /* 1. RESET ALL MARGINS */
-    section, 
-    footer, 
-    #m7, 
-    div[style*="margin-left"], 
-    header {
-      margin-left: 0 !important;
-      width: 100% !important;
-      padding-left: 20px !important;
-      padding-right: 20px !important;
-      box-sizing: border-box !important;
-    }
+	/* This only applies to screens smaller than a tablet */
+	@media (max-width: 768px) {
+		main, section, div {
+			/* Forces things to stay within the screen width */
+			max-width: 100%;
+			box-sizing: border-box;
+		}
 
-    /* 2. HIDE THE SIDEBAR */
-    /* If your sidebar has a class like .sidebar or id #sidebar, hide it so it doesn't overlap */
-    aside, #sidebar, .sidebar {
-      display: none !important;
-    }
-
-    /* 3. FIX OVERFLOW (No more horizontal scrolling) */
-    html, body {
-      overflow-x: hidden !important;
-      width: 100% !important;
-      position: relative;
-    }
-  }
+		/* If your sidebar or navigation is floating/absolute, 
+		   this ensures it doesn't cover your main content */
+		aside {
+			display: none;
+		}
+	}
 </style>
